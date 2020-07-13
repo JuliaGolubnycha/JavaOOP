@@ -1,0 +1,126 @@
+package cats;
+
+class Cats {
+	private int age;
+	private String color;
+	private String eyesColor;
+	private String earsForm;
+	private String talesLong;
+	private String sex;
+	private String woolType;
+	private double weight;
+	private double fromTaleToNoseLength;
+	
+	public Cats(int age, String color, String eyesColor, String earsForm, String talesLong, String sex, String woolType,
+			double weight, double fromTaleToNoseLength) {
+		super();
+		this.age = age;
+		this.color = color;
+		this.eyesColor = eyesColor;
+		this.earsForm = earsForm;
+		this.talesLong = talesLong;
+		this.sex = sex;
+		this.woolType = woolType;
+		this.weight = weight;
+		this.fromTaleToNoseLength = fromTaleToNoseLength;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public String getEyesColor() {
+		return eyesColor;
+	}
+
+	public void setEyesColor(String eyesColor) {
+		this.eyesColor = eyesColor;
+	}
+
+	public String getEarsForm() {
+		return earsForm;
+	}
+
+	public void setEarsForm(String earsForm) {
+		this.earsForm = earsForm;
+	}
+
+	public String getTalesLong() {
+		return talesLong;
+	}
+
+	public void setTalesLong(String talesLong) {
+		this.talesLong = talesLong;
+	}
+
+	public String getSex() {
+		return sex;
+	}
+
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+
+	public String getWoolType() {
+		return woolType;
+	}
+
+	public void setWoolType(String woolType) {
+		this.woolType = woolType;
+	}
+
+	public double getWeight() {
+		return weight;
+	}
+
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+
+	public double getFromTaleToNoseLength() {
+		return fromTaleToNoseLength;
+	}
+
+	public void setFromTaleToNoseLength(double fromTaleToNoseLength) {
+		this.fromTaleToNoseLength = fromTaleToNoseLength;
+	}
+
+	@Override
+	public String toString() {
+		return "Cats [age=" + age + ", color=" + color + ", eyesColor=" + eyesColor + ", earsForm=" + earsForm
+				+ ", talesLong=" + talesLong + ", sex=" + sex + ", woolType=" + woolType + ", weight=" + weight
+				+ ", fromTaleToNoseLength=" + fromTaleToNoseLength + "]";
+		}
+	
+	public void Fitness (double weightToLost) {
+		if (weight-weightToLost>=0)
+			weight=weight-weightToLost;
+		else
+			System.out.println("Your cat have died from starving :(");
+	}
+	
+	public void CatsSex (int catsQuantity) {
+		if (catsQuantity%2==0)
+				System.out.println("You will have kittens soon");
+		else
+			System.out.println("Your cats are sinners in the deep of their souls");
+	}
+	
+	public void Pregnancy (int kittensQuantity) {
+		if (sex=="female")
+			System.out.println("You have " + kittensQuantity + " little plush things <3");
+	}
+}
+
