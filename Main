@@ -1,0 +1,53 @@
+package cats;
+
+public class Main {
+	public static void main(String[] args) {
+		String[] kittensColor = new String[6];
+		kittensColor[0] = "brown";
+		kittensColor[1] = "white";
+		kittensColor[2] = "ginger";
+		kittensColor[3] = "black";
+		kittensColor[4] = "grey";
+		kittensColor[5] = "tabby";
+		String[] kittensEyesColor = new String[5];
+		kittensEyesColor[0] = "yellow";
+		kittensEyesColor[1] = "green";
+		kittensEyesColor[2] = "blue";
+		kittensEyesColor[3] = "brown";
+		kittensEyesColor[4] = "geterochromy";
+		String[] kittensEarsForm = new String[4];
+		kittensEarsForm[0] = "long fold";
+		kittensEarsForm[1] = "long straight";
+		kittensEarsForm[2] = "short fold";
+		kittensEarsForm[3] = "short straight";
+		String[] kittensTalesLong = new String[4];
+		kittensTalesLong[0] = "long";
+		kittensTalesLong[1] = "normal";
+		kittensTalesLong[2] = "short";
+		kittensTalesLong[3] = "bobtale";
+		String[] kittensGender = new String[2];
+		kittensGender[0] = "male";
+		kittensGender[1] = "female";
+		String[] kittensWoolType = new String[4];
+		kittensWoolType[0] = "long straight";
+		kittensWoolType[1] = "plush";
+		kittensWoolType[2] = "curly";
+		kittensWoolType[3] = "bold";
+		double kittensWeight[] = new double[3];
+		kittensWeight[0] = 0.1;
+		kittensWeight[1] = 0.2;
+		kittensWeight[2] = 0.3;
+		double[] kittensFromTaleToNoseLength = new double[3];
+		kittensFromTaleToNoseLength[0] = 8.9;
+		kittensFromTaleToNoseLength[1] = 9.2;
+		kittensFromTaleToNoseLength[2] = 9.5;
+		Cats Charlie = new Cats (5, "brown tabby", "yellow", "short fold", "normal", "male", "plush",4.6,130);
+		Cats Killka = new Cats (3, "white","green","long straight", "long", "female","long straight",3.5,120);
+		Charlie.Fitness(0.1);
+		Killka.Pregnancy(6);
+		System.out.println(Charlie.toString());
+		System.out.println(Killka.toString());
+
+	}
+
+}
