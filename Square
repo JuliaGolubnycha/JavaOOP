@@ -1,0 +1,18 @@
+package shape;
+
+public class square extends Shape {
+	double abcd;
+
+	@Override
+	double getPerimeter() {
+		// TODO Auto-generated method stub
+		return abcd * 4;
+	}
+
+	@Override
+	double getArea() {
+		// TODO Auto-generated method stub
+		return abcd * abcd;
+	}
+
+}
