@@ -1,0 +1,58 @@
+package ilovetriangles;
+
+import java.util.Scanner;
+
+class Triangle {
+	Scanner sc = new Scanner(System.in);
+	private double firstlength;
+	private double secondlength;
+	private double thirdlength;
+
+	public Triangle(double firstlength, double secondlength, double thirdlength) {
+		super();
+		this.firstlength = firstlength;
+		this.secondlength = secondlength;
+		this.thirdlength = thirdlength;
+	}
+		public double getFirstlength() {
+		return firstlength;
+	}
+
+	public void setFirstlength(double firstlength) {
+		this.firstlength = firstlength;
+	}
+
+	public double getSecondlength() {
+		return secondlength;
+	}
+
+	public void setSecondlength(double secondlength) {
+		this.secondlength = secondlength;
+	}
+
+	public double getThirdlength() {
+		return thirdlength;
+	}
+
+	public void setThirdlength(double thirdlength) {
+		this.thirdlength = thirdlength;
+	}
+
+	public void methodGerona() {
+		double result;
+		double zminna;
+		zminna = (firstlength + secondlength + thirdlength) / 2;
+		result = Math.sqrt(zminna * (zminna - firstlength) * (zminna - secondlength) * (zminna - thirdlength));
+		if (firstlength+secondlength>thirdlength&&secondlength+thirdlength>firstlength&&firstlength+thirdlength>secondlength)
+			System.out.println("Your answer is: " + result + " sm");
+		else
+			System.out.println("Triangle does not exist");
+	}
+
+	@Override
+	public String toString() {
+		return "Triangle [firstlength=" + firstlength + ", secondlength=" + secondlength + ", thirdlength="
+				+ thirdlength + "]";
+	}
+
+}
