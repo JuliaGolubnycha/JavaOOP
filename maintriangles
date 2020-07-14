@@ -1,0 +1,16 @@
+package ilovetriangles;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Triangle KingRichard = new Triangle (4.8,2.8,6.7);
+		Triangle MerlinAndMorgana = new Triangle (10.4,8.0,5);
+		System.out.println(KingRichard.toString());
+		KingRichard.methodGerona();
+		MerlinAndMorgana.methodGerona();
+		System.out.println(MerlinAndMorgana.toString());
+
+	}
+
+}
