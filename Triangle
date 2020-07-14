@@ -1,0 +1,22 @@
+package shape;
+
+public class triangle extends Shape {
+	double a;
+	double b;
+	double c;
+	double zminna = (a + b + c) / 2;
+	double result = Math.sqrt(zminna * (zminna - a) * (zminna - b) * (zminna - c));
+	@Override
+	double getPerimeter() {
+		// TODO Auto-generated method stub
+		return result;
+	}
+	@Override
+	double getArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+
+}
